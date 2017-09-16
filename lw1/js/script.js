@@ -2,18 +2,23 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min 
   }
 
-var N = 10, a = [N], k,i, isFound;
+var POSITIONS = 10, mass = [POSITIONS], k,i, isFound;
 
-for (i=1;i<N;i++)
+for (i=1;i<POSITIONS;i++)
 {
-  a[i] = getRandomInt(0,15);
+  mass[i] = getRandomInt(0,15);
 }
-alert ("Элементы массива: "+ a.join(" "));
+alert ("Элементы массива: "+ mass.join(" "));
 var k = prompt("Введите число К: ",'');
-isFound = false;
-for (i=1;i<N;i++)
+if ((k=="") || (k==null)|| (isNaN(k)))
 {
-  if (a[i] == k) 
+    alert("Ошибка");
+    break;
+}
+isFound = false;
+for (i=1;i<POSITIONS;i++)
+{
+  if (mass[i] == k) 
     {
       isFound = true;
     }
