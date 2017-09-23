@@ -1,22 +1,26 @@
 function getRandomInt(min, max) { 
   return Math.floor(Math.random() * (max - min + 1)) + min 
   }
-var POSITIONS = 10;
-var mass = [POSITIONS];
-var i, isFound;
+var POSITION = 10;
+var mass = [POSITION];
+var i,timeVariable, isFound;
 
-for (i = 0; i < POSITIONS; i++)
+for (i = 0; i < POSITION; i++)
 {
   mass[i] = getRandomInt(0,15);
 }
 alert ("Элементы массива: " + mass.join(" "));
-var timeVariable = prompt("Введите число К: ",'');
-if ((timeVariable == "") || (timeVariable == null) || (isNaN(timeVariable))) {
-    alert ("Ошибка");
-    break;
+do {
+  timeVariable = prompt("Введите число К: ",'');
+  timeVariable = parseInt(timeVariable);
+  if ((timeVariable == "") || (isNaN(timeVariable))) {
+      alert ("Ошибка");
+  }
 }
+while ((timeVariable == "") || (isNaN(timeVariable)))
+
 isFound = false;
-for (i = 0; i < POSITIONS; i++) {
+for (i = 0; i < POSITION; i++) {
   if (mass[i] == timeVariable) {
       isFound = true;
     }
