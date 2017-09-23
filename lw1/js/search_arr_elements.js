@@ -18,7 +18,6 @@ do {
 while ( (searchElement == "") || (isNaN(searchElement) ) );
 if (arr.indexOf(searchElement) !== -1) {
   alert("Элемент найден");
-}
-else {
+} else {
   alert("Элемент не найден!");
 }
