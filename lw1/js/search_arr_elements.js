@@ -7,7 +7,7 @@ var i, searchElement;
 for (i = 0; i < POSITION_COUNT; i++) {
   arr[i] = getRandomInt(0, 15);
 }
-alert("Элементы массива: " + arr.join(" ") );
+alert("Элементы массива: " + arr.join(" "));
 do {
   searchElement = prompt("Введите число: ", '');
   searchElement = parseInt(searchElement);
