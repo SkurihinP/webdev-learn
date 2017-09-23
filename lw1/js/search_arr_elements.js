@@ -11,11 +11,11 @@ alert("Элементы массива: " + arr.join(" "));
 do {
   searchElement = prompt("Введите число: ", '');
   searchElement = parseInt(searchElement);
-  if ( (searchElement == "") || (isNaN(searchElement) ) ) {
+  if ((searchElement == "") || (isNaN(searchElement))) {
       alert ("Ошибка");
   }
 }
-while ( (searchElement == "") || (isNaN(searchElement) ) );
+while ((searchElement == "") || (isNaN(searchElement)));
 if (arr.indexOf(searchElement) !== -1) {
   alert("Элемент найден");
 } else {
