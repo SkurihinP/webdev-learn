@@ -12,7 +12,7 @@ do {
   searchElement = prompt("Введите число: ", '');
   searchElement = parseInt(searchElement);
   if ((searchElement == "") || (isNaN(searchElement))) {
-      alert ("Ошибка");
+    alert ("Ошибка");
   }
 }
 while ((searchElement == "") || (isNaN(searchElement)));
