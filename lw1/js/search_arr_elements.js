@@ -1,23 +1,22 @@
 function getRandomInt(min, max) { 
   return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
+}
 var POSITION_COUNT = 10;
 var arr = [];
-var i, timeVariable;
-
+var i, searchElement;
 for (i = 0; i < POSITION_COUNT; i++) {
   arr[i] = getRandomInt(0, 15);
 }
-alert ("Элементы массива: " + arr.join(" ") );
+alert("Элементы массива: " + arr.join(" ") );
 do {
-  timeVariable = prompt("Введите число: ", '');
-  timeVariable = parseInt(timeVariable);
-  if ( (timeVariable == "") || (isNaN(timeVariable) ) ) {
+  searchElement = prompt("Введите число: ", '');
+  searchElement = parseInt(searchElement);
+  if ( (searchElement == "") || (isNaN(searchElement) ) ) {
       alert ("Ошибка");
   }
 }
-while ( (timeVariable == "") || (isNaN(timeVariable) ) );
-if (arr.indexOf(timeVariable) !== -1) {
+while ( (searchElement == "") || (isNaN(searchElement) ) );
+if (arr.indexOf(searchElement) !== -1) {
   alert("Элемент найден");
 }
 else {
