@@ -1,11 +1,22 @@
-.main { 
-    background-image: linear-gradient(to right, #648880, #293f50); 
-    width: 98%; 
-    height: 100%; 
-    top: 0; 
-    left: 0; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    overflow: auto; 
-    } 
+body {
+    background: lightsteelblue;
+}
+
+h1 {
+    margin: -20px -20px 20px;
+    line-height: 40px;
+    font-size: 15px;
+    color: grey;
+    text-align: center;
+    background: whitesmoke;
+    border-bottom: 1px solod black;
+}
+
+.login {
+    position: relative;
+    margin: 150px 0 0 0;
+    padding: 20px 20px 20px 0;
+}
+
+
+
