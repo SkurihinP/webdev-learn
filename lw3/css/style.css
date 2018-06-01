@@ -1,22 +1,64 @@
 body {
-    background: lightsteelblue;
+    background: cornsilk;
+    
+}
+
+p {
+    margin: 15px 0 0;
+    font-size: 15px;
 }
 
 h1 {
-    margin: -20px -20px 20px;
+    margin: -30px -25px 20px 3px;
     line-height: 40px;
-    font-size: 15px;
-    color: grey;
+    font-size: 20px;
+    color: navy;
     text-align: center;
     background: whitesmoke;
-    border-bottom: 1px solod black;
+    border: 1px solid black;
 }
 
 .login {
     position: relative;
-    margin: 150px 0 0 0;
+    margin: 150px auto 0 auto;
     padding: 20px 20px 20px 0;
+    width: 300px;
+    
 }
+
+.e-mail,
+.password,
+.repeatPassword {
+    width: 300px;
+    margin: 3px;
+    padding: 0 10px;
+    height: 35px;
+    outline: 1px solid lightblue;
+}
+
+.registrationButton {
+    padding: 10px 85px 10px 95px;
+    margin-left: 3px;
+    line-height: 40px;
+    font-size: 15px;
+}
+
+.checkbox {
+    margin: 0 10px 0 70px;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
