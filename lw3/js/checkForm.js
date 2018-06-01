@@ -2,15 +2,15 @@ function validateData(email, password, repeatPassword) {
   var checkbox = document.getElementsByClassName('checkbox')[0].checked;
   var mask = email.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
   if (email =='') {
-    return 'Введите email';
+    return 'Не введён email.';
   } else if (!mask) {
-    return 'Введён некорректный email';
+    return 'Введён некорректный email.';
   } else if (password.length < 6) {
-    return 'Пароль слишком короткий';
+    return 'Пароль слишком короткий. Введите больше 6 символов.';
   } else if (password != repeatPassword) {
-    return 'Введенные пароли не совпадают';
+    return 'Введенные пароли не совпадают.';
   } else if (!checkbox) {
-    return 'Чтобы зарегистрироваться, необходимо согласиться с правилами сайта';
+    return 'Чтобы зарегистрироваться, необходимо согласиться с правилами сайта.';
   } else {
     return true;
   }
